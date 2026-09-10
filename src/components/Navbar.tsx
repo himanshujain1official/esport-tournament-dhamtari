@@ -30,7 +30,7 @@ export function Navbar() {
           : 'bg-transparent py-3 sm:py-4'
       }`}
     >
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 flex items-center justify-between">
+      <div className="max-w-6xl mx-auto px-5 sm:px-6 flex items-center justify-between">
         {/* Brand */}
         <a href="#" className="flex items-center gap-2.5 group">
           <div className="w-8 h-8 sm:w-9 sm:h-9 bg-zinc-900 border border-white/10 rounded-lg sm:rounded-xl flex items-center justify-center group-hover:border-amber-500/50 transition-colors shadow-inner shrink-0">
@@ -38,7 +38,7 @@ export function Navbar() {
           </div>
           <div className="flex flex-col">
             <span className="text-white font-bold text-xs sm:text-sm tracking-wide uppercase font-display flex items-center gap-1">
-              BCS Esports
+              Esports Tournament
               <span className="text-[9px] bg-amber-500/20 text-amber-400 border border-amber-500/30 px-1 py-0.2 rounded font-mono">
                 DHAMTARI
               </span>
