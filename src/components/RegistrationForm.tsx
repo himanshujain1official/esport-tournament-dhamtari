@@ -27,7 +27,7 @@ import {
 export interface RegistrationData {
   id: string;
   timestamp: string;
-  game: 'Free Fire' | 'BGMI';
+  game: 'FF' | 'BGMI';
   teamName: string;
   captainName: string;
   captainUid: string;
@@ -46,7 +46,7 @@ const DEFAULT_ADMIN_PIN = import.meta.env.VITE_ADMIN_PIN || 'Himan123';
 
 export function RegistrationForm() {
   const [formData, setFormData] = useState({
-    game: 'Free Fire',
+    game: 'FF',
     teamName: '',
     captainName: '',
     captainUid: '',
@@ -72,7 +72,7 @@ export function RegistrationForm() {
   // Admin Search & Filter
   const [allRegistrations, setAllRegistrations] = useState<RegistrationData[]>([]);
   const [searchQuery, setSearchQuery] = useState('');
-  const [filterGame, setFilterGame] = useState<'All' | 'Free Fire' | 'BGMI'>('All');
+  const [filterGame, setFilterGame] = useState<'All' | 'FF' | 'BGMI'>('All');
 
   // Google Sheet Webhook URL
   const [sheetWebhookUrl, setSheetWebhookUrl] = useState('');
@@ -332,7 +332,7 @@ export function RegistrationForm() {
                           onChange={handleChange}
                           className="w-full bg-[#09090b] border border-white/10 text-white rounded-lg sm:rounded-xl pl-9 pr-3 py-2 sm:py-2.5 text-xs sm:text-sm focus:outline-none focus:ring-1 focus:ring-amber-500 transition-all appearance-none cursor-pointer"
                         >
-                          <option value="Free Fire">🔥 Free Fire (Squad BR)</option>
+                          <option value="FF">🔥 Free Fire (Squad BR)</option>
                           <option value="BGMI">🎮 BGMI (Squad BR)</option>
                         </select>
                       </div>
@@ -802,7 +802,7 @@ export function RegistrationForm() {
 
                 {/* Game Filter Pills */}
                 <div className="flex items-center gap-1 self-start sm:self-auto">
-                  {(['All', 'Free Fire', 'BGMI'] as const).map((game) => (
+                  {(['All', 'FF', 'BGMI'] as const).map((game) => (
                     <button
                       key={game}
                       onClick={() => setFilterGame(game)}
@@ -848,7 +848,7 @@ export function RegistrationForm() {
                             <td className="py-2.5 px-2.5">
                               <span
                                 className={`px-1.5 py-0.5 rounded text-[9px] font-semibold ${
-                                  reg.game === 'Free Fire'
+                                  reg.game === 'FF'
                                     ? 'bg-amber-500/20 text-amber-300 border border-amber-500/30'
                                     : 'bg-cyan-500/20 text-cyan-300 border border-cyan-500/30'
                                 }`}
