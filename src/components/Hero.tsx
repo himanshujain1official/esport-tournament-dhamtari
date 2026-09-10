@@ -37,12 +37,12 @@ export function Hero() {
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 via-orange-400 to-amber-200">
             Free Fire
           </span>{' '}
-          <span className="text-zinc-500 font-sans font-light">&</span>{' '}
+          <span className="text-zinc-200 font-sans font-light animate-pulse">&</span>{' '}
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-teal-300 to-cyan-200">
             BGMI
           </span>
           <br />
-          <span className="text-white animate-pulse">Tournament</span>
+          <span className="text-white">Tournament</span>
         </motion.h1>
 
         {/* Subtitle */}
@@ -60,11 +60,11 @@ export function Hero() {
           initial={{ opacity: 0, y: 15 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.3 }}
-          className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 max-w-md mx-auto"
+          className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 max-w-md mx-auto "
         >
           <button
             onClick={() => scrollTo('register')}
-            className="w-full sm:w-auto px-6 py-3 sm:px-8 sm:py-4 bg-white text-black font-bold text-x sm:text-sm rounded-full hover:bg-amber-400 transition-all font-display shadow-[0_0_25px_rgba(255,255,255,0.15)] flex items-center justify-center gap-2 cursor-pointer group"
+            className="w-full sm:w-auto px-6 py-3 sm:px-8 sm:py-4 bg-white text-black font-bold text-x sm:text-sm rounded-full hover:bg-amber-400 transition-all font-display shadow-[0_0_25px_rgba(255,255,255,0.15)] flex items-center justify-center gap-2 cursor-pointer group animate-bounce delay-0.1s"
           >
             <Sparkles className="w-4 h-4 text-black group-hover:rotate-12 transition-transform animate-pulse" />
             <span>Register Squad</span>

@@ -46,7 +46,7 @@ const DEFAULT_ADMIN_PIN = import.meta.env.VITE_ADMIN_PIN || 'Himan123';
 
 export function RegistrationForm() {
   const [formData, setFormData] = useState({
-    game: '',
+    game: 'Free Fire',
     teamName: '',
     captainName: '',
     captainUid: '',
@@ -121,7 +121,7 @@ export function RegistrationForm() {
     e.preventDefault();
     setIsSubmitting(true);
 
-    const gameLabel = formData.game === 'ff' ? 'Free Fire' : 'BGMI';
+    const gameLabel = formData.game === 'BGMI' ? 'BGMI' : 'FF';
     const randomCode = Math.floor(1000 + Math.random() * 9000);
     const generatedId = `DHAM-${formData.game.toUpperCase()}-${randomCode}`;
 
@@ -332,8 +332,8 @@ export function RegistrationForm() {
                           onChange={handleChange}
                           className="w-full bg-[#09090b] border border-white/10 text-white rounded-lg sm:rounded-xl pl-9 pr-3 py-2 sm:py-2.5 text-xs sm:text-sm focus:outline-none focus:ring-1 focus:ring-amber-500 transition-all appearance-none cursor-pointer"
                         >
-                          <option value="ff">🔥 Free Fire (Squad BR)</option>
-                          <option value="bgmi">🎮 BGMI (Squad BR)</option>
+                          <option value="Free Fire">🔥 Free Fire (Squad BR)</option>
+                          <option value="BGMI">🎮 BGMI (Squad BR)</option>
                         </select>
                       </div>
                     </div>
@@ -461,7 +461,7 @@ export function RegistrationForm() {
                         type="text"
                         name="player2"
                         required
-                        placeholder="Player 2 IGN & UID"
+                        placeholder="Player 2 UID"
                         value={formData.player2}
                         onChange={handleChange}
                         className="w-full bg-[#09090b] border border-white/10 text-white rounded-lg sm:rounded-xl px-3.5 py-2 sm:py-2.5 text-xs sm:text-sm focus:outline-none focus:ring-1 focus:ring-emerald-500 transition-all placeholder:text-zinc-600"
@@ -476,7 +476,7 @@ export function RegistrationForm() {
                         type="text"
                         name="player3"
                         required
-                        placeholder="Player 3 IGN & UID"
+                        placeholder="Player 3 UID"
                         value={formData.player3}
                         onChange={handleChange}
                         className="w-full bg-[#09090b] border border-white/10 text-white rounded-lg sm:rounded-xl px-3.5 py-2 sm:py-2.5 text-xs sm:text-sm focus:outline-none focus:ring-1 focus:ring-emerald-500 transition-all placeholder:text-zinc-600"
@@ -491,7 +491,7 @@ export function RegistrationForm() {
                         type="text"
                         name="player4"
                         required
-                        placeholder="Player 4 IGN & UID"
+                        placeholder="Player 4 UID"
                         value={formData.player4}
                         onChange={handleChange}
                         className="w-full bg-[#09090b] border border-white/10 text-white rounded-lg sm:rounded-xl px-3.5 py-2 sm:py-2.5 text-xs sm:text-sm focus:outline-none focus:ring-1 focus:ring-emerald-500 transition-all placeholder:text-zinc-600"
@@ -505,7 +505,7 @@ export function RegistrationForm() {
                       <input
                         type="text"
                         name="substitute"
-                        placeholder="Optional Sub IGN & UID"
+                        placeholder="Substitute Player UID"
                         value={formData.substitute}
                         onChange={handleChange}
                         className="w-full bg-[#09090b] border border-white/10 text-white rounded-lg sm:rounded-xl px-3.5 py-2 sm:py-2.5 text-xs sm:text-sm focus:outline-none focus:ring-1 focus:ring-white/20 transition-all placeholder:text-zinc-600"
