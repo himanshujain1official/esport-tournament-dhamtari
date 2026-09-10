@@ -123,7 +123,7 @@ export function RegistrationForm() {
 
     const gameLabel = formData.game === 'BGMI' ? 'BGMI' : 'FF';
     const randomCode = Math.floor(1000 + Math.random() * 9000);
-    const generatedId = `DHAM-${formData.game.toUpperCase()}-${randomCode}`;
+    const generatedId = `DHAM-${formData.game}-${randomCode}`;
 
     const newEntry: RegistrationData = {
       id: generatedId,
@@ -437,6 +437,7 @@ export function RegistrationForm() {
                           pattern="[0-9]{10}"
                           title="Please enter 10 digit mobile number"
                           placeholder="10-digit mobile"
+                          limit={10}
                           value={formData.phone}
                           onChange={handleChange}
                           className="w-full bg-[#09090b] border border-white/10 text-white rounded-lg sm:rounded-xl pl-9 pr-3 py-2 sm:py-2.5 text-xs sm:text-sm focus:outline-none focus:ring-1 focus:ring-cyan-500 transition-all placeholder:text-zinc-600"
