@@ -122,7 +122,7 @@ export function RegistrationForm() {
     setIsSubmitting(true);
 
     const gameLabel = formData.game === 'ff' ? 'Free Fire' : 'BGMI';
-    const randomCode = Math.floor(10000 + Math.random() * 90000);
+    const randomCode = Math.floor(1000 + Math.random() * 9000);
     const generatedId = `DHAM-${formData.game.toUpperCase()}-${randomCode}`;
 
     const newEntry: RegistrationData = {

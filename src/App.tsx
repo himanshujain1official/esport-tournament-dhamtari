@@ -108,7 +108,7 @@ export default function App() {
                     rel="noreferrer"
                     className="text-zinc-400 text-xs font-sans hover:text-amber-400 transition-colors underline underline-offset-2"
                   >
-                    Open in Google Maps
+                    College Location on Google Maps
                   </a>
                 </div>
               </div>
