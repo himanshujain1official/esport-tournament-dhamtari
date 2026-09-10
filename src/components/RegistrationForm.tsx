@@ -603,7 +603,7 @@ export function RegistrationForm() {
                   </button>
 
                   <a
-                    href="https://chat.whatsapp.com/"
+                    href="https://chat.whatsapp.com/Cg0q1d5T38t1KQUSFn7cfc"
                     target="_blank"
                     rel="noreferrer"
                     className="w-full sm:flex-1 py-2.5 px-3 bg-emerald-600 hover:bg-emerald-500 text-white rounded-xl text-xs font-semibold flex items-center justify-center gap-1.5 transition-colors shadow-lg"
@@ -617,7 +617,7 @@ export function RegistrationForm() {
                   onClick={() => {
                     setSubmittedEntry(null);
                     setFormData({
-                      game: 'ff',
+                      game: '',
                       teamName: '',
                       captainName: '',
                       captainUid: '',
