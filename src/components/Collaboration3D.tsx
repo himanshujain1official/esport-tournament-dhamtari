@@ -183,15 +183,15 @@ function TiltCard({
 
 export function Collaboration3D() {
   return (
-    <section className="relative py-6 sm:py-16 md:py-20 px-4 sm:px-6 overflow-hidden max-w-6xl mx-auto z-10">
+    <section className="relative py-1 sm:py-16 md:py-20 px-4 sm:px-6 overflow-hidden max-w-6xl mx-auto z-10">
       {/* Background Energy Rays */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-4xl h-80 bg-gradient-to-r from-amber-500/10 via-purple-500/10 to-cyan-500/10 blur-[100px] pointer-events-none" />
 
       <ScrollReveal>
         {/* Section Header */}
         <div className="text-center mb-8 sm:mb-12">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gradient-to-r from-amber-500/15 via-purple-500/15 to-cyan-500/15 border border-white/10 text-white text-[11px] sm:text-xs font-semibold uppercase tracking-wider mb-2.5 backdrop-blur-md">
-            <Sparkles className="w-3.5 h-3.5 text-amber-400 animate-spin" />
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gradient-to-r from-amber-500/15 via-purple-500/15 to-cyan-500/15 border border-white/10 text-white text-[12px] sm:text-xs font-semibold uppercase tracking-wider mb-2.5 backdrop-blur-md">
+            <Sparkles className="w-4 h-4 text-amber-400 animate-pulse" />
             <span>Dual Championship Crossover</span>
           </div>
 

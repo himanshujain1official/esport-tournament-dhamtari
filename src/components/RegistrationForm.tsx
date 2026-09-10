@@ -42,11 +42,11 @@ export interface RegistrationData {
 const STORAGE_KEY = 'dhamtari_esports_registrations';
 const GOOGLE_SHEET_URL_KEY = 'dhamtari_google_sheet_url';
 const ADMIN_PIN_KEY = 'dhamtari_admin_pin';
-const DEFAULT_ADMIN_PIN = import.meta.env.VITE_ADMIN_PIN || 'admin123';
+const DEFAULT_ADMIN_PIN = import.meta.env.VITE_ADMIN_PIN || 'Himan123';
 
 export function RegistrationForm() {
   const [formData, setFormData] = useState({
-    game: 'ff',
+    game: '',
     teamName: '',
     captainName: '',
     captainUid: '',
@@ -291,7 +291,7 @@ export function RegistrationForm() {
             Register Your Squad
           </h2>
           <p className="text-zinc-400 text-xs sm:text-sm font-sans">
-            <span className="mx-1.5 text-zinc-600">•</span> College Students Only <span className="mx-1.5 text-zinc-600">•</span> Limited Slots
+           <span className="mx-1.5 text-zinc-600">•</span> ₹40/- per squad  <span className="mx-1.5 text-zinc-600">•</span> College Students Only <span className="mx-1.5 text-zinc-600">•</span> Limited Slots
           </p>
         </div>
 
@@ -313,7 +313,7 @@ export function RegistrationForm() {
               >
                 {/* 1. Game & Team Info */}
                 <div>
-                  <h3 className="text-[11px] sm:text-xs uppercase font-bold tracking-wider text-amber-400 mb-3 font-mono flex items-center gap-2">
+                  <h3 className="text-[14px] sm:text-xs uppercase font-bold tracking-wider text-amber-400 mb-3 font-mono flex items-center gap-2">
                     <span className="w-4 h-4 rounded-full bg-amber-500/20 flex items-center justify-center text-[9px] text-amber-400">1</span>
                     Squad Information
                   </h3>
@@ -380,7 +380,7 @@ export function RegistrationForm() {
 
                 {/* 2. Team Captain (Lead Contact) */}
                 <div className="pt-2 border-t border-white/5">
-                  <h3 className="text-[11px] sm:text-xs uppercase font-bold tracking-wider text-cyan-400 mb-3 font-mono flex items-center gap-2">
+                  <h3 className="text-[14px] sm:text-xs uppercase font-bold tracking-wider text-cyan-400 mb-3 font-mono flex items-center gap-2">
                     <span className="w-4 h-4 rounded-full bg-cyan-500/20 flex items-center justify-center text-[9px] text-cyan-400">2</span>
                     Team Captain (Lead Contact)
                   </h3>
@@ -448,7 +448,7 @@ export function RegistrationForm() {
 
                 {/* 3. Squad Roster (Players 2, 3, 4 & Sub) */}
                 <div className="pt-2 border-t border-white/5">
-                  <h3 className="text-[11px] sm:text-xs uppercase font-bold tracking-wider text-emerald-400 mb-3 font-mono flex items-center gap-2">
+                  <h3 className="text-[14px] sm:text-xs uppercase font-bold tracking-wider text-emerald-400 mb-3 font-mono flex items-center gap-2">
                     <span className="w-4 h-4 rounded-full bg-emerald-500/20 flex items-center justify-center text-[9px] text-emerald-400">3</span>
                     Squad Roster
                   </h3>
@@ -622,7 +622,7 @@ export function RegistrationForm() {
                       captainName: '',
                       captainUid: '',
                       phone: '',
-                      collegeName: 'BCS Govt. PG College Dhamtari',
+                      collegeName: '',
                       player2: '',
                       player3: '',
                       player4: '',
@@ -701,9 +701,6 @@ export function RegistrationForm() {
                       {pinError}
                     </p>
                   )}
-                  <p className="text-[10px] text-zinc-500 mt-1.5 text-center">
-                    Default Passcode: <span className="text-zinc-400 font-mono">admin123</span>
-                  </p>
                 </div>
 
                 <button

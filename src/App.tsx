@@ -71,12 +71,12 @@ export default function App() {
                 <div>
                   <h4 className="text-white font-semibold mb-0.5 text-xs">Organizer Helpline</h4>
                   <p className="text-zinc-400 text-xs font-sans">
-                    Student Sports & Esports Desk<br />+91 706 781 4389
+                    Student Sports & Esports Desk<br />+91 706 781 4389 <br/> +91 93037 05828
                   </p>
                 </div>
               </div>
             </div>
-
+    
             {/* Links / Location */}
             <div className="space-y-3.5">
               <div className="flex items-start gap-3">

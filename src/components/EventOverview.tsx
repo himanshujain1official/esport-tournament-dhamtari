@@ -3,15 +3,15 @@ import { Target, Zap, ShieldCheck } from 'lucide-react';
 
 export function EventOverview() {
   return (
-    <section id="overview" className="py-4 sm:py-14 md:py-16 px-4 sm:px-6 relative z-10 max-w-5xl mx-auto text-center border-t border-white/5">
+    <section id="overview" className="py-6 sm:py-14 md:py-16 px-4 sm:px-6 relative z-10 max-w-5xl mx-auto text-center border-t border-white/5">
       <ScrollReveal>
-        <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-zinc-300 text-[10px] sm:text-xs font-semibold uppercase tracking-wider mb-3">
+        <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-zinc-300 text-[12px] sm:text-xs font-semibold uppercase tracking-wider mb-3">
           About The Tournament
         </div>
         <h2 className="text-2xl sm:text-3xl md:text-4xl font-black text-white mb-3 sm:mb-4 tracking-tight font-display">
           Elevating Collegiate Esports in Dhamtari
         </h2>
-        <p className="text-xs sm:text-sm md:text-base text-zinc-400 leading-relaxed max-w-2xl mx-auto font-sans font-medium mb-8 sm:mb-10 px-2">
+        <p className="text-x sm:text-sm md:text-base text-zinc-400 leading-relaxed max-w-2xl mx-auto font-sans font-medium mb-8 sm:mb-10 px-2">
           The Dhamtari Esports Tournament is a premier platform for students to demonstrate tactical acumen, lightning-fast reflexes, and collaborative teamwork. Organized at BCS Govt. PG College, we bring together passionate mobile esports gamers for high-stakes competition under transparent guidelines.
         </p>
       </ScrollReveal>

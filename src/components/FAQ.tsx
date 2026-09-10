@@ -9,11 +9,15 @@ export function FAQ() {
   const faqs = [
     {
       q: 'Who is eligible to participate in this tournament?',
-      a: 'The tournament is open to all students of BCS Govt. PG College Dhamtari and verified college students across Dhamtari. A valid College Student ID card must be presented if requested.',
+      a: 'The tournament is open to all students of verified college students. A valid College Student ID card must be presented if requested.',
     },
     {
       q: 'Is there any registration fee?',
       a: 'Yes, there is a nominal registration fee of ₹40/- per squad to cover administrative costs and tournament organization.',
+    },
+    {
+      q: 'How to pay the registration fee?',
+      a: 'The registration fee can be paid offline at the tournament venue at the time of verification, so please ensure your squad is present for verification before the match.',
     },
     {
       q: 'Are PC Emulators, iPads, or Triggers allowed?',

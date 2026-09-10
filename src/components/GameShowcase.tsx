@@ -28,7 +28,7 @@ export function GameShowcase() {
     <section id="details" className="py-10 sm:py-14 md:py-16 px-4 sm:px-6 relative z-10 max-w-6xl mx-auto">
       <ScrollReveal>
         <div className="text-center mb-8 sm:mb-10">
-          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-zinc-300 text-[10px] sm:text-xs font-semibold uppercase tracking-wider mb-2.5">
+          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-emerald-300 text-[12px] sm:text-xs font-semibold uppercase tracking-wider mb-2.5">
             <Swords className="w-3.5 h-3.5" />
             Competitive Rules
           </div>
@@ -58,7 +58,7 @@ export function GameShowcase() {
                   </div>
                   <div>
                     <h3 className="text-base sm:text-xl font-black text-white tracking-tight font-display">
-                      FREE FIRE MAX
+                      FF ESPORTS
                     </h3>
                     <span className="text-[10px] sm:text-xs text-amber-400 font-mono">BATTLE ROYALE SQUAD</span>
                   </div>
