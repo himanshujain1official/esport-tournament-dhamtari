@@ -1,0 +1,8 @@
+{
+  "name": "Dhamtari Esports Registration",
+  "description": "Event registration landing page for the Free Fire and BGMI Tournament in Dhamtari.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
