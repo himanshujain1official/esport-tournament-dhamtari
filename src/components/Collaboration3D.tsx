@@ -212,7 +212,7 @@ export function Collaboration3D() {
             subtitle="Rapid Reflexes & Last Squad Standing"
             theme="amber"
             icon={Flame}
-            tags={['Bermuda', 'Purgatory', 'Booyah', '4v4 Rush']}
+            tags={['Bermuda', 'Purgatory', 'Booyah', 'Rush']}
             powerLevel="High Velocity Action"
           />
         </ScrollReveal>
@@ -247,7 +247,7 @@ export function Collaboration3D() {
             subtitle="Strategic Rotations & Zone Domination"
             theme="cyan"
             icon={Gamepad2}
-            tags={['Erangel', 'Miramar', 'BGIS Multiplier', '4v4 Tactical']}
+            tags={['Erangel', 'Miramar', 'BGIS Multiplier', 'Tactical']}
             powerLevel="Tactical Combat"
           />
         </ScrollReveal>

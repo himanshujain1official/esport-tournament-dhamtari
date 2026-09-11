@@ -9,15 +9,11 @@ export function FAQ() {
   const faqs = [
     {
       q: 'Who is eligible to participate in this tournament?',
-      a: 'The tournament is open to all students of verified college students. A valid College Student ID card must be presented if requested.',
+      a: 'The tournament is open for all.',
     },
     {
       q: 'Is there any registration fee?',
-      a: 'Yes, there is a nominal registration fee of ₹40/- per squad to cover administrative costs and tournament organization.',
-    },
-    {
-      q: 'How to pay the registration fee?',
-      a: 'The registration fee can be paid offline at the tournament venue at the time of verification, so please ensure your squad is present for verification before the match.',
+      a: 'NO, the tournament is completely free to participate in. There are no hidden charges or fees.',
     },
     {
       q: 'Are PC Emulators, iPads, or Triggers allowed?',

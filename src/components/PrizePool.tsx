@@ -30,6 +30,8 @@ export function PrizePool() {
   ];
 
   const extraPerks = [
+    { icon: <Award className="w-4 h-4 text-emerald-400" />, 
+      title: "MVP", desc: "Most Valuable Player recognition." },
     {
       icon: <Star className="w-4 h-4 text-purple-400" />,
       title: "Campus Spotlight",

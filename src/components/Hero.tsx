@@ -106,7 +106,7 @@ export function Hero() {
             <Users className="w-4 h-4 text-emerald-400 shrink-0" />
             <div>
               <div className="text-white font-bold text-xs sm:text-sm font-display">Squad Battle</div>
-              <div className="text-zinc-400 text-[10px] font-sans">4v4 Battle Royale</div>
+              <div className="text-zinc-400 text-[10px] font-sans">Battle Royale</div>
             </div>
           </div>
 

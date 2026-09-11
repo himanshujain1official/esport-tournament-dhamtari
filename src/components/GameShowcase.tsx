@@ -9,9 +9,7 @@ export function GameShowcase() {
     { label: "Maps", value: "Bermuda & Purgatory" },
     { label: "Format", value: "Qualifiers → Semi → Grand Finals" },
     { label: "Device", value: "Mobile Only (Android / iOS) • No Emulators" },
-    { label: "Scoring", value: "Placement Points + 1 Pt per Kill" },
     { label: "Timing", value: "Slots announced in WhatsApp group" },
-    { label: "Eligibility", value: "College Student ID Mandatory" },
   ];
 
   const bgmiDetails = [
@@ -19,9 +17,7 @@ export function GameShowcase() {
     { label: "Maps", value: "Erangel & Miramar" },
     { label: "Format", value: "Qualifiers → Semi → Grand Finals" },
     { label: "Device", value: "Mobile Only (Android / iOS) • No Emulators" },
-    { label: "Scoring", value: "BGIS Point System + 1 Pt per Kill" },
     { label: "Timing", value: "Slots announced in WhatsApp group" },
-    { label: "Eligibility", value: "College Student ID Mandatory" },
   ];
 
   return (
@@ -63,9 +59,6 @@ export function GameShowcase() {
                     <span className="text-[10px] sm:text-xs text-amber-400 font-mono">BATTLE ROYALE SQUAD</span>
                   </div>
                 </div>
-                <span className="px-2.5 py-0.5 rounded-full bg-amber-500/20 text-amber-400 border border-amber-500/30 text-[10px] sm:text-xs font-bold font-mono">
-                  4v4
-                </span>
               </div>
 
               <ul className="space-y-2.5 flex-1">
@@ -118,9 +111,6 @@ export function GameShowcase() {
                     <span className="text-[10px] sm:text-xs text-cyan-400 font-mono">BATTLEGROUNDS SQUAD</span>
                   </div>
                 </div>
-                <span className="px-2.5 py-0.5 rounded-full bg-cyan-500/20 text-cyan-400 border border-cyan-500/30 text-[10px] sm:text-xs font-bold font-mono">
-                  4v4
-                </span>
               </div>
 
               <ul className="space-y-2.5 flex-1">

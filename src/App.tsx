@@ -84,14 +84,25 @@ export default function App() {
                   <Globe className="w-3.5 h-3.5 text-emerald-400" />
                 </div>
                 <div>
-                  <h4 className="text-white font-semibold mb-0.5 text-xs">Official College Portal</h4>
+                  <h4 className="text-white font-semibold mb-0.5 text-xs">Official Esport Social Media</h4>
+                  <h5 className="text-zinc-400 text-xs font-sans">Follow us for updates, announcements, and highlights.</h5>
                   <a
-                    href="https://bcspgcdmt.com/#/home"
+                    href="https://www.instagram.com/yuva_e_arena?stkn=MTY4cnp0ZTJsejBxZQ=="
                     target="_blank"
                     rel="noreferrer"
                     className="text-zinc-400 text-xs font-sans hover:text-amber-400 transition-colors"
                   >
-                    https://bcspgcdmt.com
+                    Instagram
+                  </a> 
+                  <br>
+                  </br>
+                   <a
+                    href="https://www.facebook.com/share/19WevM45et/"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="text-zinc-400 text-xs font-sans hover:text-amber-400 transition-colors"
+                  >
+                    Facebook
                   </a>
                 </div>
               </div>
@@ -101,7 +112,7 @@ export default function App() {
                   <MapPin className="w-3.5 h-3.5 text-amber-400" />
                 </div>
                 <div>
-                  <h4 className="text-white font-semibold mb-0.5 text-xs">College Map Location</h4>
+                  <h4 className="text-white font-semibold text-xs">College Map Location</h4>
                   <a 
                     href="https://maps.app.goo.gl/WoYLXXEait9mD8AC9?g_st=ac"
                     target="_blank"

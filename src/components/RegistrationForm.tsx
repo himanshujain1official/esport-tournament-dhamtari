@@ -291,7 +291,7 @@ export function RegistrationForm() {
             Register Your Squad
           </h2>
           <p className="text-zinc-400 text-xs sm:text-sm font-sans">
-           <span className="mx-1.5 text-zinc-600">•</span> ₹40/- per squad  <span className="mx-1.5 text-zinc-600">•</span> College Students Only <span className="mx-1.5 text-zinc-600">•</span> Limited Slots
+           <span className="mx-1.5 text-zinc-600">•</span> Free Entry <span className="mx-1.5 text-zinc-600">•</span> Open for All <span className="mx-1.5 text-zinc-600">•</span> Limited Slots
           </p>
         </div>
 
