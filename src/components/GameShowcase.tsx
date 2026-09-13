@@ -2,7 +2,6 @@ import { motion } from 'motion/react';
 import { ScrollReveal } from './ScrollReveal';
 import { Flame, Gamepad2, Swords } from 'lucide-react';
 
-
 export function GameShowcase() {
   const freeFireDetails = [
     { label: "Squad Size", value: "4 Players + 1 Substitute" },
@@ -21,17 +20,17 @@ export function GameShowcase() {
   ];
 
   return (
-    <section id="details" className="py-10 sm:py-14 md:py-16 px-4 sm:px-6 relative z-10 max-w-6xl mx-auto">
+    <section id="details" className="py-10 sm:py-14 md:py-16 px-4 sm:px-6 relative z-10 max-w-6xl mx-auto bg-white">
       <ScrollReveal>
         <div className="text-center mb-8 sm:mb-10">
-          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-emerald-300 text-[12px] sm:text-xs font-semibold uppercase tracking-wider mb-2.5">
-            <Swords className="w-3.5 h-3.5" />
+          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-blue-50 border border-blue-200 text-blue-700 text-[12px] sm:text-xs font-semibold uppercase tracking-wider mb-2.5 shadow-sm">
+            <Swords className="w-3.5 h-3.5 text-blue-600" />
             Competitive Rules
           </div>
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-black text-white tracking-tight font-display">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-black text-black tracking-tight font-display">
             Games & Format
           </h2>
-          <p className="text-xs sm:text-sm text-zinc-400 mt-1 max-w-md mx-auto">
+          <p className="text-xs sm:text-sm text-gray-600 mt-1 max-w-md mx-auto">
             Choose your battlefield. Both titles feature standard competitive esports lobby rules.
           </p>
         </div>
@@ -42,21 +41,19 @@ export function GameShowcase() {
         <ScrollReveal delay={0.1}>
           <motion.div
             whileHover={{ y: -3 }}
-            className="group relative bg-[#101014] rounded-xl sm:rounded-2xl overflow-hidden border border-white/10 hover:border-amber-500/50 transition-all duration-300 h-full shadow-lg flex flex-col"
+            className="group relative bg-gray-50 rounded-xl sm:rounded-2xl overflow-hidden border border-gray-200 hover:border-blue-400 transition-all duration-300 h-full shadow-sm hover:shadow-md flex flex-col"
           >
-            <div className="absolute top-0 right-0 w-48 h-48 bg-amber-500/10 rounded-full blur-[60px] pointer-events-none group-hover:bg-amber-500/20 transition-all" />
-
             <div className="p-4 sm:p-6 md:p-7 relative z-10 flex flex-col flex-1">
-              <div className="flex items-center justify-between mb-4 pb-3 sm:pb-4 border-b border-white/10">
+              <div className="flex items-center justify-between mb-4 pb-3 sm:pb-4 border-b border-gray-200">
                 <div className="flex items-center gap-2.5 sm:gap-3">
-                  <div className="w-9 h-9 sm:w-11 sm:h-11 rounded-lg sm:rounded-xl bg-amber-500/15 border border-amber-500/30 flex items-center justify-center text-amber-400 shadow-inner">
+                  <div className="w-9 h-9 sm:w-11 sm:h-11 rounded-lg sm:rounded-xl bg-blue-50 border border-blue-200 flex items-center justify-center text-blue-600 shadow-sm">
                     <Flame className="w-5 h-5 sm:w-6 sm:h-6" />
                   </div>
                   <div>
-                    <h3 className="text-base sm:text-xl font-black text-white tracking-tight font-display">
+                    <h3 className="text-base sm:text-xl font-black text-black tracking-tight font-display">
                       FF ESPORTS
                     </h3>
-                    <span className="text-[10px] sm:text-xs text-amber-400 font-mono">BATTLE ROYALE SQUAD</span>
+                    <span className="text-[10px] sm:text-xs text-blue-600 font-mono font-bold">BATTLE ROYALE SQUAD</span>
                   </div>
                 </div>
               </div>
@@ -65,24 +62,24 @@ export function GameShowcase() {
                 {freeFireDetails.map((detail, idx) => (
                   <li
                     key={idx}
-                    className="flex items-center justify-between gap-2 border-b border-white/5 pb-2 text-[11px] sm:text-xs last:border-0 last:pb-0"
+                    className="flex items-center justify-between gap-2 border-b border-gray-200 pb-2 text-[11px] sm:text-xs last:border-0 last:pb-0"
                   >
-                    <span className="text-zinc-500 font-sans font-medium uppercase tracking-wider">
+                    <span className="text-gray-500 font-sans font-medium uppercase tracking-wider">
                       {detail.label}
                     </span>
-                    <span className="text-zinc-200 font-semibold text-right">
+                    <span className="text-gray-900 font-semibold text-right">
                       {detail.value}
                     </span>
                   </li>
                 ))}
               </ul>
 
-              <div className="mt-5 pt-4 border-t border-white/10">
+              <div className="mt-5 pt-4 border-t border-gray-200">
                 <a
                   href="#register"
-                  className="w-full py-2.5 rounded-xl bg-amber-500 hover:bg-amber-400 text-black font-bold text-xs sm:text-sm flex items-center justify-center gap-1.5 transition-colors font-display"
+                  className="w-full py-2.5 rounded-xl bg-gradient-to-r from-blue-700 to-blue-500 hover:from-blue-800 hover:to-blue-600 text-white font-bold text-xs sm:text-sm flex items-center justify-center gap-1.5 transition-colors font-display shadow-sm"
                 >
-                  <Flame className="w-3.5 h-3.5" />
+                  <Flame className="w-3.5 h-3.5 text-white" />
                   Register for Free Fire
                 </a>
               </div>
@@ -94,21 +91,19 @@ export function GameShowcase() {
         <ScrollReveal delay={0.2}>
           <motion.div
             whileHover={{ y: -3 }}
-            className="group relative bg-[#101014] rounded-xl sm:rounded-2xl overflow-hidden border border-white/10 hover:border-cyan-500/50 transition-all duration-300 h-full shadow-lg flex flex-col"
+            className="group relative bg-gray-50 rounded-xl sm:rounded-2xl overflow-hidden border border-gray-200 hover:border-blue-400 transition-all duration-300 h-full shadow-sm hover:shadow-md flex flex-col"
           >
-            <div className="absolute top-0 right-0 w-48 h-48 bg-cyan-500/10 rounded-full blur-[60px] pointer-events-none group-hover:bg-cyan-500/20 transition-all" />
-
             <div className="p-4 sm:p-6 md:p-7 relative z-10 flex flex-col flex-1">
-              <div className="flex items-center justify-between mb-4 pb-3 sm:pb-4 border-b border-white/10">
+              <div className="flex items-center justify-between mb-4 pb-3 sm:pb-4 border-b border-gray-200">
                 <div className="flex items-center gap-2.5 sm:gap-3">
-                  <div className="w-9 h-9 sm:w-11 sm:h-11 rounded-lg sm:rounded-xl bg-cyan-500/15 border border-cyan-500/30 flex items-center justify-center text-cyan-400 shadow-inner">
+                  <div className="w-9 h-9 sm:w-11 sm:h-11 rounded-lg sm:rounded-xl bg-blue-50 border border-blue-200 flex items-center justify-center text-blue-600 shadow-sm">
                     <Gamepad2 className="w-5 h-5 sm:w-6 sm:h-6" />
                   </div>
                   <div>
-                    <h3 className="text-base sm:text-xl font-black text-white tracking-tight font-display">
+                    <h3 className="text-base sm:text-xl font-black text-black tracking-tight font-display">
                       BGMI ESPORTS
                     </h3>
-                    <span className="text-[10px] sm:text-xs text-cyan-400 font-mono">BATTLEGROUNDS SQUAD</span>
+                    <span className="text-[10px] sm:text-xs text-blue-600 font-mono font-bold">BATTLEGROUNDS SQUAD</span>
                   </div>
                 </div>
               </div>
@@ -117,24 +112,24 @@ export function GameShowcase() {
                 {bgmiDetails.map((detail, idx) => (
                   <li
                     key={idx}
-                    className="flex items-center justify-between gap-2 border-b border-white/5 pb-2 text-[11px] sm:text-xs last:border-0 last:pb-0"
+                    className="flex items-center justify-between gap-2 border-b border-gray-200 pb-2 text-[11px] sm:text-xs last:border-0 last:pb-0"
                   >
-                    <span className="text-zinc-500 font-sans font-medium uppercase tracking-wider">
+                    <span className="text-gray-500 font-sans font-medium uppercase tracking-wider">
                       {detail.label}
                     </span>
-                    <span className="text-zinc-200 font-semibold text-right">
+                    <span className="text-gray-900 font-semibold text-right">
                       {detail.value}
                     </span>
                   </li>
                 ))}
               </ul>
 
-              <div className="mt-5 pt-4 border-t border-white/10">
+              <div className="mt-5 pt-4 border-t border-gray-200">
                 <a
                   href="#register"
-                  className="w-full py-2.5 rounded-xl bg-cyan-500 hover:bg-cyan-400 text-black font-bold text-xs sm:text-sm flex items-center justify-center gap-1.5 transition-colors font-display"
+                  className="w-full py-2.5 rounded-xl bg-gradient-to-r from-blue-700 to-blue-500 hover:from-blue-800 hover:to-blue-600 text-white font-bold text-xs sm:text-sm flex items-center justify-center gap-1.5 transition-colors font-display shadow-sm"
                 >
-                  <Gamepad2 className="w-3.5 h-3.5" />
+                  <Gamepad2 className="w-3.5 h-3.5 text-white" />
                   Register for BGMI
                 </a>
               </div>

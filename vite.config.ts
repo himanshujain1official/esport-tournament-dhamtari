@@ -4,6 +4,17 @@ import fs from 'fs';
 import path from 'path';
 import {defineConfig, Plugin} from 'vite';
 
+// Ensure user logo is copied to public directory
+const userUploadedLogo = 'C:/Users/himan/.gemini/antigravity/brain/41065766-17b3-46ae-859e-dac2837d645f/.user_uploaded/media_1789218877797.jpg';
+const targetLogo = path.resolve(__dirname, 'public', 'logo.jpg');
+try {
+  if (fs.existsSync(userUploadedLogo)) {
+    fs.copyFileSync(userUploadedLogo, targetLogo);
+  }
+} catch (e) {
+  // ignore
+}
+
 // LINT.IfChange(aistudio_media_plugin)
 function aistudioMediaPlugin(): Plugin {
   return {
@@ -74,7 +85,7 @@ export default defineConfig(() => {
     },
     server: {
       // HMR is disabled in AI Studio via DISABLE_HMR env var.
-      // Do not modifyâfile watching is disabled to prevent flickering during agent edits.
+      // Do not modifyâ€”file watching is disabled to prevent flickering during agent edits.
       hmr: process.env.DISABLE_HMR !== 'true',
       // Disable file watching when DISABLE_HMR is true to save CPU during agent edits.
       watch: process.env.DISABLE_HMR === 'true' ? null : {},

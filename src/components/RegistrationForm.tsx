@@ -280,26 +280,22 @@ export function RegistrationForm() {
   });
 
   return (
-    <section id="register" className="py-7 sm:py-14 md:py-16 px-4 sm:px-6 relative z-10 max-w-3xl mx-auto">
+    <section id="register" className="py-7 sm:py-14 md:py-16 px-4 sm:px-6 relative z-10 max-w-3xl mx-auto bg-white">
       <ScrollReveal>
         <div className="text-center mb-6 sm:mb-8">
-          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-[10px] sm:text-xs font-semibold uppercase tracking-wider mb-2.5">
-            <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-ping" />
+          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-blue-50 border border-blue-200 text-blue-700 text-[10px] sm:text-xs font-semibold uppercase tracking-wider mb-2.5 shadow-sm">
+            <span className="w-1.5 h-1.5 rounded-full bg-blue-600 animate-ping" />
             Slots Open
           </div>
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-black text-white mb-1.5 uppercase tracking-tight font-display">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-black text-black mb-1.5 uppercase tracking-tight font-display">
             Register Your Squad
           </h2>
-          <p className="text-zinc-400 text-xs sm:text-sm font-sans">
-           <span className="mx-1.5 text-zinc-600">•</span> Free Entry <span className="mx-1.5 text-zinc-600">•</span> Open for All <span className="mx-1.5 text-zinc-600">•</span> Limited Slots
+          <p className="text-gray-600 text-xs sm:text-sm font-sans">
+           <span className="mx-1.5 text-gray-300">•</span> Free Entry <span className="mx-1.5 text-gray-300">•</span> Open for All <span className="mx-1.5 text-gray-300">•</span> Limited Slots
           </p>
         </div>
 
-        <div className="bg-[#111114] rounded-xl sm:rounded-2xl p-4 sm:p-7 md:p-8 border border-white/10 shadow-2xl relative overflow-hidden">
-          {/* Subtle glow inside the form card */}
-          <div className="absolute -top-10 -right-10 w-48 sm:w-64 h-48 sm:h-64 bg-amber-500/10 rounded-full blur-[80px] pointer-events-none" />
-          <div className="absolute -bottom-10 -left-10 w-48 sm:w-64 h-48 sm:h-64 bg-cyan-500/10 rounded-full blur-[80px] pointer-events-none" />
-
+        <div className="bg-gray-50 rounded-xl sm:rounded-2xl p-4 sm:p-7 md:p-8 border border-gray-200 shadow-sm relative overflow-hidden">
           <AnimatePresence mode="wait">
             {!submittedEntry ? (
               <motion.form
@@ -313,24 +309,24 @@ export function RegistrationForm() {
               >
                 {/* 1. Game & Team Info */}
                 <div>
-                  <h3 className="text-[14px] sm:text-xs uppercase font-bold tracking-wider text-amber-400 mb-3 font-mono flex items-center gap-2">
-                    <span className="w-4 h-4 rounded-full bg-amber-500/20 flex items-center justify-center text-[9px] text-amber-400">1</span>
+                  <h3 className="text-[14px] sm:text-xs uppercase font-bold tracking-wider text-blue-700 mb-3 font-mono flex items-center gap-2">
+                    <span className="w-4 h-4 rounded-full bg-blue-100 flex items-center justify-center text-[9px] text-blue-700">1</span>
                     Squad Information
                   </h3>
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-3.5">
                     {/* Game Choice */}
                     <div className="space-y-1">
-                      <label className="text-[11px] sm:text-xs font-medium text-zinc-300">
+                      <label className="text-[11px] sm:text-xs font-medium text-gray-700">
                         Select Game <span className="text-rose-500">*</span>
                       </label>
                       <div className="relative">
-                        <Gamepad2 className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-zinc-500" />
+                        <Gamepad2 className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400" />
                         <select
                           name="game"
                           required
                           value={formData.game}
                           onChange={handleChange}
-                          className="w-full bg-[#09090b] border border-white/10 text-white rounded-lg sm:rounded-xl pl-9 pr-3 py-2 sm:py-2.5 text-xs sm:text-sm focus:outline-none focus:ring-1 focus:ring-amber-500 transition-all appearance-none cursor-pointer"
+                          className="w-full bg-white border border-gray-200 text-gray-900 rounded-lg sm:rounded-xl pl-9 pr-3 py-2 sm:py-2.5 text-xs sm:text-sm focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-blue-500 transition-all appearance-none cursor-pointer shadow-sm"
                         >
                           <option value="FF">🔥 Free Fire (Squad BR)</option>
                           <option value="BGMI">🎮 BGMI (Squad BR)</option>
@@ -340,11 +336,11 @@ export function RegistrationForm() {
 
                     {/* Squad / Team Name */}
                     <div className="space-y-1">
-                      <label className="text-[11px] sm:text-xs font-medium text-zinc-300">
+                      <label className="text-[11px] sm:text-xs font-medium text-gray-700">
                         Squad / Team Name <span className="text-rose-500">*</span>
                       </label>
                       <div className="relative">
-                        <Users className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-zinc-500" />
+                        <Users className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400" />
                         <input
                           type="text"
                           name="teamName"
@@ -352,18 +348,18 @@ export function RegistrationForm() {
                           placeholder="e.g. Soul Reapers"
                           value={formData.teamName}
                           onChange={handleChange}
-                          className="w-full bg-[#09090b] border border-white/10 text-white rounded-lg sm:rounded-xl pl-9 pr-3 py-2 sm:py-2.5 text-xs sm:text-sm focus:outline-none focus:ring-1 focus:ring-amber-500 transition-all placeholder:text-zinc-600"
+                          className="w-full bg-white border border-gray-200 text-gray-900 rounded-lg sm:rounded-xl pl-9 pr-3 py-2 sm:py-2.5 text-xs sm:text-sm focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-blue-500 transition-all placeholder:text-gray-400 shadow-sm"
                         />
                       </div>
                     </div>
 
                     {/* College Name */}
                     <div className="space-y-1 sm:col-span-2">
-                      <label className="text-[11px] sm:text-xs font-medium text-zinc-300">
+                      <label className="text-[11px] sm:text-xs font-medium text-gray-700">
                         College / Institution Name <span className="text-rose-500">*</span>
                       </label>
                       <div className="relative">
-                        <Building className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-zinc-500" />
+                        <Building className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400" />
                         <input
                           type="text"
                           name="collegeName"
@@ -371,7 +367,7 @@ export function RegistrationForm() {
                           placeholder="e.g. BCS Govt. PG College Dhamtari"
                           value={formData.collegeName}
                           onChange={handleChange}
-                          className="w-full bg-[#09090b] border border-white/10 text-white rounded-lg sm:rounded-xl pl-9 pr-3 py-2 sm:py-2.5 text-xs sm:text-sm focus:outline-none focus:ring-1 focus:ring-amber-500 transition-all placeholder:text-zinc-600"
+                          className="w-full bg-white border border-gray-200 text-gray-900 rounded-lg sm:rounded-xl pl-9 pr-3 py-2 sm:py-2.5 text-xs sm:text-sm focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-blue-500 transition-all placeholder:text-gray-400 shadow-sm"
                         />
                       </div>
                     </div>
@@ -379,19 +375,19 @@ export function RegistrationForm() {
                 </div>
 
                 {/* 2. Team Captain (Lead Contact) */}
-                <div className="pt-2 border-t border-white/5">
-                  <h3 className="text-[14px] sm:text-xs uppercase font-bold tracking-wider text-cyan-400 mb-3 font-mono flex items-center gap-2">
-                    <span className="w-4 h-4 rounded-full bg-cyan-500/20 flex items-center justify-center text-[9px] text-cyan-400">2</span>
+                <div className="pt-2 border-t border-gray-200">
+                  <h3 className="text-[14px] sm:text-xs uppercase font-bold tracking-wider text-blue-700 mb-3 font-mono flex items-center gap-2">
+                    <span className="w-4 h-4 rounded-full bg-blue-100 flex items-center justify-center text-[9px] text-blue-700">2</span>
                     Team Captain (Lead Contact)
                   </h3>
                   <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
                     {/* Captain Name */}
                     <div className="space-y-1">
-                      <label className="text-[11px] sm:text-xs font-medium text-zinc-300">
+                      <label className="text-[11px] sm:text-xs font-medium text-gray-700">
                         Captain Name <span className="text-rose-500">*</span>
                       </label>
                       <div className="relative">
-                        <User className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-zinc-500" />
+                        <User className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400" />
                         <input
                           type="text"
                           name="captainName"
@@ -399,18 +395,18 @@ export function RegistrationForm() {
                           placeholder="Leader Name"
                           value={formData.captainName}
                           onChange={handleChange}
-                          className="w-full bg-[#09090b] border border-white/10 text-white rounded-lg sm:rounded-xl pl-9 pr-3 py-2 sm:py-2.5 text-xs sm:text-sm focus:outline-none focus:ring-1 focus:ring-cyan-500 transition-all placeholder:text-zinc-600"
+                          className="w-full bg-white border border-gray-200 text-gray-900 rounded-lg sm:rounded-xl pl-9 pr-3 py-2 sm:py-2.5 text-xs sm:text-sm focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-blue-500 transition-all placeholder:text-gray-400 shadow-sm"
                         />
                       </div>
                     </div>
 
                     {/* Captain UID */}
                     <div className="space-y-1">
-                      <label className="text-[11px] sm:text-xs font-medium text-zinc-300">
+                      <label className="text-[11px] sm:text-xs font-medium text-gray-700">
                         In-Game UID <span className="text-rose-500">*</span>
                       </label>
                       <div className="relative">
-                        <Hash className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-zinc-500" />
+                        <Hash className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400" />
                         <input
                           type="text"
                           name="captainUid"
@@ -418,18 +414,18 @@ export function RegistrationForm() {
                           placeholder="e.g. 518928371"
                           value={formData.captainUid}
                           onChange={handleChange}
-                          className="w-full bg-[#09090b] border border-white/10 text-white rounded-lg sm:rounded-xl pl-9 pr-3 py-2 sm:py-2.5 text-xs sm:text-sm focus:outline-none focus:ring-1 focus:ring-cyan-500 transition-all placeholder:text-zinc-600"
+                          className="w-full bg-white border border-gray-200 text-gray-900 rounded-lg sm:rounded-xl pl-9 pr-3 py-2 sm:py-2.5 text-xs sm:text-sm focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-blue-500 transition-all placeholder:text-gray-400 shadow-sm"
                         />
                       </div>
                     </div>
 
                     {/* WhatsApp Phone */}
                     <div className="space-y-1">
-                      <label className="text-[11px] sm:text-xs font-medium text-zinc-300">
+                      <label className="text-[11px] sm:text-xs font-medium text-gray-700">
                         WhatsApp No. <span className="text-rose-500">*</span>
                       </label>
                       <div className="relative">
-                        <Phone className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-zinc-500" />
+                        <Phone className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400" />
                         <input
                           type="tel"
                           name="phone"
@@ -437,10 +433,9 @@ export function RegistrationForm() {
                           pattern="[0-9]{10}"
                           title="Please enter 10 digit mobile number"
                           placeholder="10-digit mobile"
-                          limit={10}
                           value={formData.phone}
                           onChange={handleChange}
-                          className="w-full bg-[#09090b] border border-white/10 text-white rounded-lg sm:rounded-xl pl-9 pr-3 py-2 sm:py-2.5 text-xs sm:text-sm focus:outline-none focus:ring-1 focus:ring-cyan-500 transition-all placeholder:text-zinc-600"
+                          className="w-full bg-white border border-gray-200 text-gray-900 rounded-lg sm:rounded-xl pl-9 pr-3 py-2 sm:py-2.5 text-xs sm:text-sm focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-blue-500 transition-all placeholder:text-gray-400 shadow-sm"
                         />
                       </div>
                     </div>
@@ -448,14 +443,14 @@ export function RegistrationForm() {
                 </div>
 
                 {/* 3. Squad Roster (Players 2, 3, 4 & Sub) */}
-                <div className="pt-2 border-t border-white/5">
-                  <h3 className="text-[14px] sm:text-xs uppercase font-bold tracking-wider text-emerald-400 mb-3 font-mono flex items-center gap-2">
-                    <span className="w-4 h-4 rounded-full bg-emerald-500/20 flex items-center justify-center text-[9px] text-emerald-400">3</span>
+                <div className="pt-2 border-t border-gray-200">
+                  <h3 className="text-[14px] sm:text-xs uppercase font-bold tracking-wider text-blue-700 mb-3 font-mono flex items-center gap-2">
+                    <span className="w-4 h-4 rounded-full bg-blue-100 flex items-center justify-center text-[9px] text-blue-700">3</span>
                     Squad Roster
                   </h3>
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                     <div className="space-y-1">
-                      <label className="text-[11px] sm:text-xs font-medium text-zinc-300">
+                      <label className="text-[11px] sm:text-xs font-medium text-gray-700">
                         Player 2 (IGN / UID) <span className="text-rose-500">*</span>
                       </label>
                       <input
@@ -465,12 +460,12 @@ export function RegistrationForm() {
                         placeholder="Player 2 UID"
                         value={formData.player2}
                         onChange={handleChange}
-                        className="w-full bg-[#09090b] border border-white/10 text-white rounded-lg sm:rounded-xl px-3.5 py-2 sm:py-2.5 text-xs sm:text-sm focus:outline-none focus:ring-1 focus:ring-emerald-500 transition-all placeholder:text-zinc-600"
+                        className="w-full bg-white border border-gray-200 text-gray-900 rounded-lg sm:rounded-xl px-3.5 py-2 sm:py-2.5 text-xs sm:text-sm focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-blue-500 transition-all placeholder:text-gray-400 shadow-sm"
                       />
                     </div>
 
                     <div className="space-y-1">
-                      <label className="text-[11px] sm:text-xs font-medium text-zinc-300">
+                      <label className="text-[11px] sm:text-xs font-medium text-gray-700">
                         Player 3 (IGN / UID) <span className="text-rose-500">*</span>
                       </label>
                       <input
@@ -480,12 +475,12 @@ export function RegistrationForm() {
                         placeholder="Player 3 UID"
                         value={formData.player3}
                         onChange={handleChange}
-                        className="w-full bg-[#09090b] border border-white/10 text-white rounded-lg sm:rounded-xl px-3.5 py-2 sm:py-2.5 text-xs sm:text-sm focus:outline-none focus:ring-1 focus:ring-emerald-500 transition-all placeholder:text-zinc-600"
+                        className="w-full bg-white border border-gray-200 text-gray-900 rounded-lg sm:rounded-xl px-3.5 py-2 sm:py-2.5 text-xs sm:text-sm focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-blue-500 transition-all placeholder:text-gray-400 shadow-sm"
                       />
                     </div>
 
                     <div className="space-y-1">
-                      <label className="text-[11px] sm:text-xs font-medium text-zinc-300">
+                      <label className="text-[11px] sm:text-xs font-medium text-gray-700">
                         Player 4 (IGN / UID) <span className="text-rose-500">*</span>
                       </label>
                       <input
@@ -495,12 +490,12 @@ export function RegistrationForm() {
                         placeholder="Player 4 UID"
                         value={formData.player4}
                         onChange={handleChange}
-                        className="w-full bg-[#09090b] border border-white/10 text-white rounded-lg sm:rounded-xl px-3.5 py-2 sm:py-2.5 text-xs sm:text-sm focus:outline-none focus:ring-1 focus:ring-emerald-500 transition-all placeholder:text-zinc-600"
+                        className="w-full bg-white border border-gray-200 text-gray-900 rounded-lg sm:rounded-xl px-3.5 py-2 sm:py-2.5 text-xs sm:text-sm focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-blue-500 transition-all placeholder:text-gray-400 shadow-sm"
                       />
                     </div>
 
                     <div className="space-y-1">
-                      <label className="text-[11px] sm:text-xs font-medium text-zinc-400">
+                      <label className="text-[11px] sm:text-xs font-medium text-gray-600">
                         Substitute (Optional)
                       </label>
                       <input
@@ -509,7 +504,7 @@ export function RegistrationForm() {
                         placeholder="Substitute Player UID"
                         value={formData.substitute}
                         onChange={handleChange}
-                        className="w-full bg-[#09090b] border border-white/10 text-white rounded-lg sm:rounded-xl px-3.5 py-2 sm:py-2.5 text-xs sm:text-sm focus:outline-none focus:ring-1 focus:ring-white/20 transition-all placeholder:text-zinc-600"
+                        className="w-full bg-white border border-gray-200 text-gray-900 rounded-lg sm:rounded-xl px-3.5 py-2 sm:py-2.5 text-xs sm:text-sm focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-blue-500 transition-all placeholder:text-gray-400 shadow-sm"
                       />
                     </div>
                   </div>
@@ -520,16 +515,16 @@ export function RegistrationForm() {
                   whileTap={{ scale: 0.99 }}
                   disabled={isSubmitting}
                   type="submit"
-                  className="w-full bg-white text-black font-bold text-xs sm:text-sm rounded-xl py-3 sm:py-3.5 mt-3 hover:bg-amber-400 transition-colors flex items-center justify-center gap-1.5 disabled:opacity-70 disabled:cursor-not-allowed font-display shadow-lg cursor-pointer"
+                  className="w-full bg-gradient-to-r from-blue-700 to-blue-500 hover:from-blue-800 hover:to-blue-600 text-white font-bold text-xs sm:text-sm rounded-xl py-3 sm:py-3.5 mt-3 transition-colors flex items-center justify-center gap-1.5 disabled:opacity-70 disabled:cursor-not-allowed font-display shadow-md cursor-pointer"
                 >
                   {isSubmitting ? (
                     <>
-                      <Loader2 className="w-4 h-4 animate-spin" />
+                      <Loader2 className="w-4 h-4 animate-spin text-white" />
                       <span>Submitting Registration...</span>
                     </>
                   ) : (
                     <>
-                      <CheckCircle2 className="w-4 h-4 text-black" />
+                      <CheckCircle2 className="w-4 h-4 text-white" />
                       <span>Confirm & Register Squad</span>
                     </>
                   )}
@@ -543,52 +538,52 @@ export function RegistrationForm() {
                 animate={{ opacity: 1, scale: 1 }}
                 className="flex flex-col items-center py-4 text-center relative z-10"
               >
-                <div className="w-12 h-12 sm:w-14 sm:h-14 bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 rounded-xl sm:rounded-2xl flex items-center justify-center mb-3 shadow-lg">
+                <div className="w-12 h-12 sm:w-14 sm:h-14 bg-emerald-50 border border-emerald-200 text-emerald-600 rounded-xl sm:rounded-2xl flex items-center justify-center mb-3 shadow-sm">
                   <CheckCircle2 className="w-6 h-6 sm:w-7 sm:h-7" />
                 </div>
 
-                <h3 className="text-xl sm:text-2xl font-bold text-white mb-1 font-display">
+                <h3 className="text-xl sm:text-2xl font-bold text-black mb-1 font-display">
                   Registration Confirmed!
                 </h3>
-                <p className="text-zinc-400 text-xs max-w-sm font-sans mb-4 px-2">
+                <p className="text-gray-600 text-xs max-w-sm font-sans mb-4 px-2">
                   Your squad is registered for the Dhamtari Esports Tournament. Save your entry pass below.
                 </p>
 
                 {/* Pass Card */}
-                <div className="w-full max-w-md bg-zinc-950 border border-white/15 rounded-xl sm:rounded-2xl p-4 sm:p-5 text-left shadow-2xl mb-4 relative overflow-hidden">
-                  <div className="flex items-center justify-between pb-3 border-b border-white/10 mb-3">
+                <div className="w-full max-w-md bg-white border border-gray-200 rounded-xl sm:rounded-2xl p-4 sm:p-5 text-left shadow-md mb-4 relative overflow-hidden">
+                  <div className="flex items-center justify-between pb-3 border-b border-gray-200 mb-3">
                     <div>
-                      <span className="text-[9px] text-zinc-500 uppercase tracking-wider font-mono block">Entry Pass Code</span>
-                      <span className="text-amber-400 font-mono font-bold text-base sm:text-lg">{submittedEntry.id}</span>
+                      <span className="text-[9px] text-gray-500 uppercase tracking-wider font-mono block">Entry Pass Code</span>
+                      <span className="text-blue-600 font-mono font-bold text-base sm:text-lg">{submittedEntry.id}</span>
                     </div>
-                    <span className="px-2 py-0.5 rounded-full text-[10px] sm:text-xs font-semibold bg-white/10 text-white border border-white/10">
+                    <span className="px-2 py-0.5 rounded-full text-[10px] sm:text-xs font-semibold bg-blue-50 text-blue-700 border border-blue-200">
                       {submittedEntry.game}
                     </span>
                   </div>
 
                   <div className="grid grid-cols-2 gap-2 text-xs font-sans mb-3">
                     <div>
-                      <span className="text-zinc-500 block text-[10px]">Squad Name</span>
-                      <span className="text-white font-medium text-xs truncate block">{submittedEntry.teamName}</span>
+                      <span className="text-gray-500 block text-[10px]">Squad Name</span>
+                      <span className="text-gray-900 font-medium text-xs truncate block">{submittedEntry.teamName}</span>
                     </div>
                     <div>
-                      <span className="text-zinc-500 block text-[10px]">Captain</span>
-                      <span className="text-white font-medium text-xs truncate block">{submittedEntry.captainName}</span>
+                      <span className="text-gray-500 block text-[10px]">Captain</span>
+                      <span className="text-gray-900 font-medium text-xs truncate block">{submittedEntry.captainName}</span>
                     </div>
                     <div>
-                      <span className="text-zinc-500 block text-[10px]">Captain UID</span>
-                      <span className="text-white font-mono text-xs">{submittedEntry.captainUid}</span>
+                      <span className="text-gray-500 block text-[10px]">Captain UID</span>
+                      <span className="text-gray-900 font-mono text-xs">{submittedEntry.captainUid}</span>
                     </div>
                     <div>
-                      <span className="text-zinc-500 block text-[10px]">WhatsApp</span>
-                      <span className="text-white font-mono text-xs">{submittedEntry.phone}</span>
+                      <span className="text-gray-500 block text-[10px]">WhatsApp</span>
+                      <span className="text-gray-900 font-mono text-xs">{submittedEntry.phone}</span>
                     </div>
                   </div>
 
-                  <div className="bg-white/5 rounded-lg p-2.5 border border-white/5 text-[10px] sm:text-[11px] text-zinc-300 space-y-0.5 font-sans">
-                    <p><span className="text-zinc-500">Roster:</span> {submittedEntry.player2}, {submittedEntry.player3}, {submittedEntry.player4}</p>
+                  <div className="bg-gray-50 rounded-lg p-2.5 border border-gray-200 text-[10px] sm:text-[11px] text-gray-700 space-y-0.5 font-sans">
+                    <p><span className="text-gray-500">Roster:</span> {submittedEntry.player2}, {submittedEntry.player3}, {submittedEntry.player4}</p>
                     {submittedEntry.substitute && (
-                      <p><span className="text-zinc-500">Sub:</span> {submittedEntry.substitute}</p>
+                      <p><span className="text-gray-500">Sub:</span> {submittedEntry.substitute}</p>
                     )}
                   </div>
                 </div>
@@ -597,9 +592,9 @@ export function RegistrationForm() {
                 <div className="flex flex-col sm:flex-row items-center justify-center gap-2.5 w-full max-w-md">
                   <button
                     onClick={handleCopyPass}
-                    className="w-full sm:flex-1 py-2.5 px-3 bg-white/10 hover:bg-white/20 text-white rounded-xl text-xs font-semibold flex items-center justify-center gap-1.5 transition-colors cursor-pointer"
+                    className="w-full sm:flex-1 py-2.5 px-3 bg-gray-100 hover:bg-gray-200 text-gray-800 rounded-xl text-xs font-semibold flex items-center justify-center gap-1.5 transition-colors cursor-pointer border border-gray-200"
                   >
-                    {copied ? <Check className="w-3.5 h-3.5 text-emerald-400" /> : <Copy className="w-3.5 h-3.5" />}
+                    {copied ? <Check className="w-3.5 h-3.5 text-emerald-600" /> : <Copy className="w-3.5 h-3.5" />}
                     {copied ? 'Copied Details!' : 'Copy Pass'}
                   </button>
 
@@ -607,9 +602,9 @@ export function RegistrationForm() {
                     href="https://chat.whatsapp.com/Cg0q1d5T38t1KQUSFn7cfc"
                     target="_blank"
                     rel="noreferrer"
-                    className="w-full sm:flex-1 py-2.5 px-3 bg-emerald-600 hover:bg-emerald-500 text-white rounded-xl text-xs font-semibold flex items-center justify-center gap-1.5 transition-colors shadow-lg"
+                    className="w-full sm:flex-1 py-2.5 px-3 bg-emerald-600 hover:bg-emerald-700 text-white rounded-xl text-xs font-semibold flex items-center justify-center gap-1.5 transition-colors shadow-sm"
                   >
-                    <MessageCircle className="w-3.5 h-3.5" />
+                    <MessageCircle className="w-3.5 h-3.5 text-white" />
                     Join WhatsApp
                   </a>
                 </div>
@@ -630,7 +625,7 @@ export function RegistrationForm() {
                       substitute: '',
                     });
                   }}
-                  className="mt-4 text-[11px] text-zinc-400 hover:text-white underline underline-offset-4 cursor-pointer"
+                  className="mt-4 text-[11px] text-gray-500 hover:text-blue-600 underline underline-offset-4 cursor-pointer"
                 >
                   Register Another Team
                 </button>
@@ -640,16 +635,16 @@ export function RegistrationForm() {
         </div>
 
         {/* Organizer / Admin Trigger */}
-        <div className="mt-4 sm:mt-5 flex items-center justify-between px-1 text-[9px] sm:text-xs text-zinc-500 font-sans">
+        <div className="mt-4 sm:mt-5 flex items-center justify-between px-1 text-[9px] sm:text-xs text-gray-500 font-sans">
           <div className="flex items-center gap-1.5">
             <span className="w-1.5 h-1.5 rounded-full bg-emerald-500" />
             <span>{allRegistrations.length} {allRegistrations.length === 1 ? 'Squad' : 'Squads'} Registered</span>
           </div>
           <button
             onClick={handleOpenAdmin}
-            className="text-zinc-500 hover:text-amber-400 flex items-center gap-1 transition-colors cursor-pointer group"
+            className="text-gray-500 hover:text-blue-600 flex items-center gap-1 transition-colors cursor-pointer group"
           >
-            <Lock className="w-3 h-3 group-hover:text-amber-400" />
+            <Lock className="w-3 h-3 group-hover:text-blue-600" />
             <span>Organizer Login</span>
           </button>
         </div>
@@ -658,28 +653,28 @@ export function RegistrationForm() {
       {/* 1. Admin PIN Prompt Modal */}
       <AnimatePresence>
         {showPinPrompt && (
-          <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-md">
+          <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm">
             <motion.div
               initial={{ opacity: 0, scale: 0.92 }}
               animate={{ opacity: 1, scale: 1 }}
               exit={{ opacity: 0, scale: 0.92 }}
-              className="bg-[#121217] border border-white/15 rounded-xl sm:rounded-2xl w-full max-w-sm p-5 sm:p-6 shadow-2xl relative overflow-hidden"
+              className="bg-white border border-gray-200 rounded-xl sm:rounded-2xl w-full max-w-sm p-5 sm:p-6 shadow-2xl relative overflow-hidden"
             >
               <button
                 onClick={() => setShowPinPrompt(false)}
-                className="absolute top-4 right-4 text-zinc-400 hover:text-white cursor-pointer"
+                className="absolute top-4 right-4 text-gray-400 hover:text-black cursor-pointer"
               >
                 <X className="w-4 h-4" />
               </button>
 
-              <div className="w-10 h-10 rounded-xl bg-amber-500/10 border border-amber-500/30 text-amber-400 flex items-center justify-center mb-3">
+              <div className="w-10 h-10 rounded-xl bg-blue-50 border border-blue-200 text-blue-600 flex items-center justify-center mb-3 shadow-sm">
                 <KeyRound className="w-5 h-5" />
               </div>
 
-              <h3 className="text-lg font-bold text-white font-display mb-1">
+              <h3 className="text-lg font-bold text-black font-display mb-1">
                 Organizer Access
               </h3>
-              <p className="text-[11px] text-zinc-400 font-sans mb-3.5">
+              <p className="text-[11px] text-gray-600 font-sans mb-3.5">
                 Enter your organizer passcode to view registered participants & export tournament data.
               </p>
 
@@ -695,10 +690,10 @@ export function RegistrationForm() {
                       setPinError('');
                     }}
                     autoFocus
-                    className="w-full bg-[#09090b] border border-white/15 text-white rounded-lg sm:rounded-xl px-3 py-2.5 text-xs sm:text-sm focus:outline-none focus:ring-1 focus:ring-amber-500 text-center tracking-widest font-mono"
+                    className="w-full bg-gray-50 border border-gray-200 text-gray-900 rounded-lg sm:rounded-xl px-3 py-2.5 text-xs sm:text-sm focus:outline-none focus:ring-1 focus:ring-blue-500 text-center tracking-widest font-mono"
                   />
                   {pinError && (
-                    <p className="text-rose-400 text-[11px] mt-1 text-center font-sans">
+                    <p className="text-rose-600 text-[11px] mt-1 text-center font-sans">
                       {pinError}
                     </p>
                   )}
@@ -706,7 +701,7 @@ export function RegistrationForm() {
 
                 <button
                   type="submit"
-                  className="w-full py-2.5 bg-amber-500 hover:bg-amber-400 text-black font-bold rounded-xl text-xs sm:text-sm font-display transition-colors cursor-pointer"
+                  className="w-full py-2.5 bg-gradient-to-r from-blue-700 to-blue-500 hover:from-blue-800 hover:to-blue-600 text-white font-bold rounded-xl text-xs sm:text-sm font-display transition-colors cursor-pointer shadow-sm"
                 >
                   Unlock Dashboard
                 </button>
@@ -719,27 +714,27 @@ export function RegistrationForm() {
       {/* 2. Admin / Registered Teams Dashboard Modal */}
       <AnimatePresence>
         {showAdminModal && (
-          <div className="fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-4 bg-black/85 backdrop-blur-md">
+          <div className="fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-4 bg-black/60 backdrop-blur-sm">
             <motion.div
               initial={{ opacity: 0, scale: 0.95 }}
               animate={{ opacity: 1, scale: 1 }}
               exit={{ opacity: 0, scale: 0.95 }}
-              className="bg-[#121216] border border-white/15 rounded-xl sm:rounded-2xl w-full max-w-5xl max-h-[92vh] flex flex-col shadow-2xl overflow-hidden"
+              className="bg-white border border-gray-200 rounded-xl sm:rounded-2xl w-full max-w-5xl max-h-[92vh] flex flex-col shadow-2xl overflow-hidden"
             >
               {/* Header */}
-              <div className="p-3.5 sm:p-5 border-b border-white/10 flex flex-wrap items-center justify-between gap-2 bg-zinc-950">
+              <div className="p-3.5 sm:p-5 border-b border-gray-200 flex flex-wrap items-center justify-between gap-2 bg-gray-50">
                 <div className="flex items-center gap-2 sm:gap-3">
-                  <div className="w-8 h-8 sm:w-9 sm:h-9 rounded-lg bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-400">
+                  <div className="w-8 h-8 sm:w-9 sm:h-9 rounded-lg bg-blue-50 border border-blue-200 flex items-center justify-center text-blue-600 shadow-sm">
                     <ShieldCheck className="w-4 h-4" />
                   </div>
                   <div>
-                    <h3 className="text-sm sm:text-base font-bold text-white font-display flex items-center gap-1.5">
+                    <h3 className="text-sm sm:text-base font-bold text-black font-display flex items-center gap-1.5">
                       Organizer Dashboard
-                      <span className="text-[10px] bg-white/10 text-zinc-300 px-1.5 py-0.2 rounded-full font-mono font-normal">
+                      <span className="text-[10px] bg-gray-200 text-gray-700 px-1.5 py-0.2 rounded-full font-mono font-normal">
                         {allRegistrations.length} Teams
                       </span>
                     </h3>
-                    <p className="text-[10px] sm:text-xs text-zinc-400 font-sans">
+                    <p className="text-[10px] sm:text-xs text-gray-500 font-sans">
                       Manage participants, export CSV, and sync with Google Sheets.
                     </p>
                   </div>
@@ -749,15 +744,15 @@ export function RegistrationForm() {
                   {allRegistrations.length > 0 && (
                     <button
                       onClick={exportCSV}
-                      className="px-2.5 py-1.5 bg-white/10 hover:bg-white/20 text-white rounded-lg text-xs font-semibold flex items-center gap-1 transition-colors cursor-pointer"
+                      className="px-2.5 py-1.5 bg-white hover:bg-gray-100 text-gray-800 border border-gray-200 rounded-lg text-xs font-semibold flex items-center gap-1 transition-colors cursor-pointer shadow-sm"
                     >
-                      <Download className="w-3.5 h-3.5 text-emerald-400" />
+                      <Download className="w-3.5 h-3.5 text-blue-600" />
                       Export CSV
                     </button>
                   )}
                   <button
                     onClick={() => setShowAdminModal(false)}
-                    className="p-1.5 text-zinc-400 hover:text-white rounded-lg hover:bg-white/5 cursor-pointer"
+                    className="p-1.5 text-gray-400 hover:text-black rounded-lg hover:bg-gray-100 cursor-pointer"
                   >
                     <X className="w-4 h-4" />
                   </button>
@@ -765,10 +760,10 @@ export function RegistrationForm() {
               </div>
 
               {/* Google Sheets Sync Settings Bar */}
-              <div className="p-3 bg-zinc-900/60 border-b border-white/5 font-sans">
+              <div className="p-3 bg-gray-50 border-b border-gray-200 font-sans">
                 <form onSubmit={handleSaveSheetUrl} className="flex flex-col sm:flex-row items-center gap-2">
-                  <div className="flex items-center gap-1.5 text-[11px] text-zinc-300 shrink-0">
-                    <Sheet className="w-3.5 h-3.5 text-emerald-400" />
+                  <div className="flex items-center gap-1.5 text-[11px] text-gray-700 shrink-0">
+                    <Sheet className="w-3.5 h-3.5 text-emerald-600" />
                     <span className="font-semibold">Google Sheet URL:</span>
                   </div>
                   <input
@@ -776,11 +771,11 @@ export function RegistrationForm() {
                     placeholder="https://script.google.com/macros/s/.../exec"
                     value={sheetWebhookUrl}
                     onChange={(e) => setSheetWebhookUrl(e.target.value)}
-                    className="flex-1 w-full bg-[#09090b] border border-white/10 text-white text-[11px] rounded-lg px-2.5 py-1.5 focus:outline-none focus:ring-1 focus:ring-amber-500 font-mono"
+                    className="flex-1 w-full bg-white border border-gray-200 text-gray-900 text-[11px] rounded-lg px-2.5 py-1.5 focus:outline-none focus:ring-1 focus:ring-blue-500 font-mono shadow-sm"
                   />
                   <button
                     type="submit"
-                    className="w-full sm:w-auto px-3 py-1.5 bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-semibold rounded-lg shrink-0 transition-colors cursor-pointer"
+                    className="w-full sm:w-auto px-3 py-1.5 bg-blue-600 hover:bg-blue-700 text-white text-xs font-semibold rounded-lg shrink-0 transition-colors cursor-pointer shadow-sm"
                   >
                     {sheetSavedNotice ? 'Saved!' : 'Save Sheet'}
                   </button>
@@ -788,16 +783,16 @@ export function RegistrationForm() {
               </div>
 
               {/* Search & Filter Controls */}
-              <div className="p-3 border-b border-white/5 flex flex-col sm:flex-row items-center justify-between gap-2.5 bg-zinc-950/40 font-sans">
+              <div className="p-3 border-b border-gray-200 flex flex-col sm:flex-row items-center justify-between gap-2.5 bg-white font-sans">
                 {/* Search Bar */}
                 <div className="relative w-full sm:w-64">
-                  <Search className="absolute left-2.5 top-1/2 -translate-y-1/2 w-3.5 h-3.5 text-zinc-500" />
+                  <Search className="absolute left-2.5 top-1/2 -translate-y-1/2 w-3.5 h-3.5 text-gray-400" />
                   <input
                     type="text"
                     placeholder="Search squad, leader, UID, phone..."
                     value={searchQuery}
                     onChange={(e) => setSearchQuery(e.target.value)}
-                    className="w-full bg-[#09090b] border border-white/10 text-white pl-8 pr-2.5 py-1.5 text-xs rounded-lg focus:outline-none focus:ring-1 focus:ring-amber-500"
+                    className="w-full bg-gray-50 border border-gray-200 text-gray-900 pl-8 pr-2.5 py-1.5 text-xs rounded-lg focus:outline-none focus:ring-1 focus:ring-blue-500 shadow-sm"
                   />
                 </div>
 
@@ -809,8 +804,8 @@ export function RegistrationForm() {
                       onClick={() => setFilterGame(game)}
                       className={`px-2.5 py-1 rounded-md text-[11px] font-medium transition-colors cursor-pointer ${
                         filterGame === game
-                          ? 'bg-amber-500 text-black font-bold'
-                          : 'bg-white/5 text-zinc-400 hover:text-white'
+                          ? 'bg-gradient-to-r from-blue-700 to-blue-500 text-white font-bold shadow-sm'
+                          : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
                       }`}
                     >
                       {game}
@@ -820,9 +815,9 @@ export function RegistrationForm() {
               </div>
 
               {/* Participants Table */}
-              <div className="p-3 sm:p-5 overflow-y-auto flex-1 font-sans text-xs">
+              <div className="p-3 sm:p-5 overflow-y-auto flex-1 font-sans text-xs bg-white">
                 {filteredRegistrations.length === 0 ? (
-                  <div className="py-12 text-center text-zinc-500 text-xs">
+                  <div className="py-12 text-center text-gray-500 text-xs">
                     {allRegistrations.length === 0
                       ? 'No registrations submitted yet. As participants register, they will appear here.'
                       : 'No participants match your search/filter.'}
@@ -831,7 +826,7 @@ export function RegistrationForm() {
                   <div className="overflow-x-auto">
                     <table className="w-full text-left border-collapse min-w-[600px]">
                       <thead>
-                        <tr className="border-b border-white/10 text-zinc-400 uppercase text-[9px] tracking-wider">
+                        <tr className="border-b border-gray-200 text-gray-500 uppercase text-[9px] tracking-wider">
                           <th className="pb-2 px-2.5">Pass ID</th>
                           <th className="pb-2 px-2.5">Game</th>
                           <th className="pb-2 px-2.5">Squad Name</th>
@@ -842,48 +837,48 @@ export function RegistrationForm() {
                           <th className="pb-2 px-2.5 text-right">Action</th>
                         </tr>
                       </thead>
-                      <tbody className="divide-y divide-white/5 text-[11px]">
+                      <tbody className="divide-y divide-gray-100 text-[11px]">
                         {filteredRegistrations.map((reg) => (
-                          <tr key={reg.id} className="hover:bg-white/[0.02] transition-colors">
-                            <td className="py-2.5 px-2.5 font-mono text-amber-400 font-semibold">{reg.id}</td>
+                          <tr key={reg.id} className="hover:bg-gray-50 transition-colors">
+                            <td className="py-2.5 px-2.5 font-mono text-blue-600 font-semibold">{reg.id}</td>
                             <td className="py-2.5 px-2.5">
                               <span
                                 className={`px-1.5 py-0.5 rounded text-[9px] font-semibold ${
                                   reg.game === 'FF'
-                                    ? 'bg-amber-500/20 text-amber-300 border border-amber-500/30'
-                                    : 'bg-cyan-500/20 text-cyan-300 border border-cyan-500/30'
+                                    ? 'bg-blue-50 text-blue-700 border border-blue-200'
+                                    : 'bg-sky-50 text-sky-700 border border-sky-200'
                                 }`}
                               >
                                 {reg.game}
                               </span>
                             </td>
-                            <td className="py-2.5 px-2.5 font-semibold text-white">{reg.teamName}</td>
-                            <td className="py-2.5 px-2.5 text-zinc-300">
+                            <td className="py-2.5 px-2.5 font-semibold text-gray-900">{reg.teamName}</td>
+                            <td className="py-2.5 px-2.5 text-gray-800">
                               <div>{reg.captainName}</div>
-                              <span className="text-[9px] text-zinc-500 font-mono">UID: {reg.captainUid}</span>
+                              <span className="text-[9px] text-gray-500 font-mono">UID: {reg.captainUid}</span>
                             </td>
-                            <td className="py-2.5 px-2.5 text-zinc-300 font-mono">
+                            <td className="py-2.5 px-2.5 text-gray-800 font-mono">
                               <a
                                 href={`https://wa.me/91${reg.phone}`}
                                 target="_blank"
                                 rel="noreferrer"
-                                className="text-emerald-400 hover:underline flex items-center gap-1"
+                                className="text-blue-600 hover:underline flex items-center gap-1"
                               >
                                 {reg.phone}
                                 <ExternalLink className="w-2.5 h-2.5" />
                               </a>
                             </td>
-                            <td className="py-2.5 px-2.5 text-zinc-400 text-[10px] max-w-[120px] truncate" title={reg.collegeName}>
+                            <td className="py-2.5 px-2.5 text-gray-600 text-[10px] max-w-[120px] truncate" title={reg.collegeName}>
                               {reg.collegeName}
                             </td>
-                            <td className="py-2.5 px-2.5 text-zinc-400 text-[10px] max-w-[160px] truncate" title={`${reg.player2}, ${reg.player3}, ${reg.player4} ${reg.substitute ? `(Sub: ${reg.substitute})` : ''}`}>
+                            <td className="py-2.5 px-2.5 text-gray-600 text-[10px] max-w-[160px] truncate" title={`${reg.player2}, ${reg.player3}, ${reg.player4} ${reg.substitute ? `(Sub: ${reg.substitute})` : ''}`}>
                               {reg.player2}, {reg.player3}, {reg.player4}
-                              {reg.substitute && <span className="text-zinc-500"> (Sub: {reg.substitute})</span>}
+                              {reg.substitute && <span className="text-gray-400"> (Sub: {reg.substitute})</span>}
                             </td>
                             <td className="py-2.5 px-2.5 text-right">
                               <button
                                 onClick={() => deleteRegistration(reg.id)}
-                                className="p-1 text-zinc-500 hover:text-rose-400 hover:bg-rose-500/10 rounded transition-colors cursor-pointer"
+                                className="p-1 text-gray-400 hover:text-rose-600 hover:bg-rose-50 rounded transition-colors cursor-pointer"
                                 title="Delete squad"
                               >
                                 <Trash2 className="w-3.5 h-3.5" />
@@ -898,11 +893,11 @@ export function RegistrationForm() {
               </div>
 
               {/* Footer */}
-              <div className="p-3 bg-zinc-950 border-t border-white/10 flex items-center justify-between text-xs font-sans">
+              <div className="p-3 bg-gray-50 border-t border-gray-200 flex items-center justify-between text-xs font-sans">
                 {allRegistrations.length > 0 && (
                   <button
                     onClick={clearAllData}
-                    className="text-rose-400 hover:text-rose-300 text-[11px] flex items-center gap-1 cursor-pointer"
+                    className="text-rose-600 hover:text-rose-700 text-[11px] flex items-center gap-1 cursor-pointer font-medium"
                   >
                     <Trash2 className="w-3 h-3" />
                     Clear Records
@@ -910,7 +905,7 @@ export function RegistrationForm() {
                 )}
                 <button
                   onClick={() => setShowAdminModal(false)}
-                  className="px-4 py-1.5 bg-white text-black text-xs font-semibold rounded-lg hover:bg-zinc-200 ml-auto cursor-pointer font-display"
+                  className="px-4 py-1.5 bg-gray-900 text-white text-xs font-semibold rounded-lg hover:bg-black ml-auto cursor-pointer font-display shadow-sm"
                 >
                   Close
                 </button>

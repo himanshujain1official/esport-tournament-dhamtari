@@ -6,8 +6,8 @@
 }
 
 html, body {
-  background-color: #09090b;
-  color: #ffffff;
+  background-color: #ffffff;
+  color: #1f2937;
   font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -18,4 +18,5 @@ html, body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-display);
+  color: #000000;
 }

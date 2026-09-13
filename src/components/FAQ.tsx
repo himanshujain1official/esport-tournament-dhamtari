@@ -38,18 +38,18 @@ export function FAQ() {
   };
 
   return (
-    <section id="faq" className="py-8 sm:py-14 md:py-16 px-4 sm:px-6 border-t border-white/5 bg-[#09090b]">
+    <section id="faq" className="py-8 sm:py-14 md:py-16 px-4 sm:px-6 border-t border-gray-200 bg-white">
       <div className="max-w-3xl mx-auto">
         <ScrollReveal>
           <div className="text-center mb-8 sm:mb-10">
-            <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-500/10 border border-amber-500/20 text-amber-400 text-[10px] sm:text-xs font-semibold uppercase tracking-wider mb-2.5">
-              <HelpCircle className="w-3.5 h-3.5" />
+            <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-blue-50 border border-blue-200 text-blue-700 text-[10px] sm:text-xs font-semibold uppercase tracking-wider mb-2.5 shadow-sm">
+              <HelpCircle className="w-3.5 h-3.5 text-blue-600" />
               Got Questions?
             </div>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-black text-white tracking-tight font-display">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-black text-black tracking-tight font-display">
               Frequently Asked Questions
             </h2>
-            <p className="text-xs sm:text-sm text-zinc-400 mt-1 max-w-md mx-auto">
+            <p className="text-xs sm:text-sm text-gray-600 mt-1 max-w-md mx-auto">
               Everything you need to know about tournament participation, rules, and match rooms.
             </p>
           </div>
@@ -63,21 +63,21 @@ export function FAQ() {
                 <div
                   className={`border rounded-xl sm:rounded-2xl transition-all duration-200 overflow-hidden ${
                     isOpen
-                      ? 'border-amber-500/40 bg-zinc-900/60'
-                      : 'border-white/5 bg-zinc-900/20 hover:border-white/15'
+                      ? 'border-blue-300 bg-blue-50/40 shadow-sm'
+                      : 'border-gray-200 bg-gray-50 hover:border-gray-300'
                   }`}
                 >
                   <button
                     onClick={() => toggle(index)}
                     className="w-full py-3 px-4 sm:py-3.5 sm:px-5 text-left flex items-center justify-between gap-3 focus:outline-none cursor-pointer"
                   >
-                    <span className="font-semibold text-white text-xs sm:text-sm font-sans">
+                    <span className="font-semibold text-gray-900 text-xs sm:text-sm font-sans">
                       {faq.q}
                     </span>
                     <motion.div
                       animate={{ rotate: isOpen ? 180 : 0 }}
                       transition={{ duration: 0.2 }}
-                      className="shrink-0 text-zinc-400"
+                      className="shrink-0 text-gray-500"
                     >
                       <ChevronDown className="w-4 h-4" />
                     </motion.div>
@@ -91,7 +91,7 @@ export function FAQ() {
                         exit={{ height: 0, opacity: 0 }}
                         transition={{ duration: 0.2 }}
                       >
-                        <div className="px-4 pb-3.5 sm:px-5 sm:pb-4 pt-1 text-zinc-400 text-[11px] sm:text-xs font-sans leading-relaxed border-t border-white/5">
+                        <div className="px-4 pb-3.5 sm:px-5 sm:pb-4 pt-1 text-gray-600 text-[11px] sm:text-xs font-sans leading-relaxed border-t border-gray-200">
                           {faq.a}
                         </div>
                       </motion.div>
