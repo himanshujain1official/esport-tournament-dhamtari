@@ -163,7 +163,7 @@ export function Collaboration3D() {
           </div>
 
           <p className="text-xs sm:text-sm text-gray-600 max-w-xl mx-auto font-sans mt-2">
-            Experience the ultimate collegiate collision of Free Fire adrenaline and BGMI tactical warfare in Dhamtari.
+            Experience the ultimate collision of Free Fire adrenaline and BGMI tactical warfare in Dhamtari.
           </p>
         </div>
       </ScrollReveal>

@@ -63,13 +63,13 @@ export function Navbar() {
         {/* Desktop CTA */}
         <div className="hidden md:flex items-center gap-3">
           <a
-            href="https://forms.gle/SAgEewwLX5LCP9y2A"
+            href="https://yuvadhamtari.com/event-details.php?id=11"
             target="_blank"
             rel="noopener noreferrer"
             className="px-4 py-1.5 rounded-full bg-gradient-to-r from-blue-700 to-blue-500 text-white font-bold text-xs hover:from-blue-800 hover:to-blue-600 transition-all transform hover:scale-105 font-display flex items-center gap-1.5 shadow-sm"
           >
-            <Trophy className="w-3.5 h-3.5 text-white" />
-            Register Team
+           
+            Yuva Dhamtari Login
           </a>
         </div>
 
@@ -103,13 +103,13 @@ export function Navbar() {
               </a>
             ))}
             <a
-              href="https://forms.gle/SAgEewwLX5LCP9y2A"
+              href="https://yuvadhamtari.com/event-details.php?id=11"
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => setMobileMenuOpen(false)}
               className="block text-center w-full py-2.5 rounded-xl bg-gradient-to-r from-blue-700 to-blue-500 text-white text-xs font-bold font-display hover:from-blue-800 hover:to-blue-600 transition-colors shadow-sm"
             >
-              Register Team
+              Yuva Dhamtari Login
             </a>
           </motion.div>
         )}

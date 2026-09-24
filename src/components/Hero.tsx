@@ -52,7 +52,7 @@ export function Hero() {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="text-xm sm:text-sm md:text-base text-gray-600 max-w-xl mx-auto font-sans leading-relaxed mb-6 sm:mb-8 px-2"
         >
-          The premier collegiate battleground in Dhamtari. Assemble your squad, battle the finest college players, and claim the championship trophy & rewards!
+          The premier battleground in Dhamtari. Assemble your squad, battle the finest college players, and claim the championship trophy & rewards!
         </motion.p>
 
         {/* Action Buttons */}
@@ -68,7 +68,7 @@ export function Hero() {
             rel="noopener noreferrer"
             className="w-full sm:w-auto px-6 py-3 sm:px-8 sm:py-4 bg-gradient-to-r from-blue-700 to-blue-500 hover:from-blue-800 hover:to-blue-600 text-white font-bold text-x sm:text-sm rounded-full transition-all font-display shadow-md flex items-center justify-center gap-2 cursor-pointer group animate-bounce delay-0.1s"
           >
-            <Sparkles className="w-4 h-4 text-white group-hover:rotate-12 transition-transform animate-pulse" />
+             <Trophy className="w-3.5 h-3.5 text-white" />
             <span>Register Squad</span>
           </a>
 

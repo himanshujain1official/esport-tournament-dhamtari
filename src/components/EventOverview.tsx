@@ -9,7 +9,7 @@ export function EventOverview() {
           About The Tournament
         </div>
         <h2 className="text-2xl sm:text-3xl md:text-4xl font-black text-black mb-3 sm:mb-4 tracking-tight font-display">
-          Elevating Collegiate Esports in Dhamtari
+          Elevating Esports in Dhamtari
         </h2>
         <p className="text-xm sm:text-sm md:text-base text-gray-600 leading-relaxed max-w-2xl mx-auto font-sans font-medium mb-8 sm:mb-10 px-2">
           The Dhamtari Esports Tournament is a premier platform for students to demonstrate tactical acumen, lightning-fast reflexes, and collaborative teamwork. Organized at BCS Govt. PG College, we bring together passionate mobile esports gamers for high-stakes competition under transparent guidelines.

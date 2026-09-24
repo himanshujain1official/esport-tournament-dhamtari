@@ -284,6 +284,10 @@ export function RegistrationForm() {
     <section id="register" className="py-7 sm:py-14 md:py-16 px-4 sm:px-6 relative z-10 max-w-3xl mx-auto bg-white">
       <ScrollReveal>
 
+<div>
+   <img src="/YEA FF and BGMI.png" alt="YEA FF and BGMI poster" className="h-full w-full object-contain" />
+</div>
+
   <div className="flex flex-col items-center justify-center py-12 px-4">
   {/* Heading Section */}
   <div className="text-center mb-8">

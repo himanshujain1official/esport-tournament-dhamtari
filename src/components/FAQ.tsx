@@ -21,11 +21,11 @@ export function FAQ() {
     },
     {
       q: 'How will Custom Room ID & Password be shared?',
-      a: 'Room IDs and passwords will be shared directly with registered Squad Captains via WhatsApp and SMS 15 to 30 minutes before your assigned match slot.',
+      a: 'Room IDs and passwords will be shared directly with registered Squad Captains via WhatsApp 15 to 30 minutes before your assigned match slot.',
     },
     {
       q: 'What is the squad size required?',
-      a: 'Each team must have 4 main players. You may also specify 1 optional substitute player during registration.',
+      a: 'Each team must have 4 main players. You may also specify 1 substitute player during registration.',
     },
     {
       q: 'What should we do if our team arrives late?',

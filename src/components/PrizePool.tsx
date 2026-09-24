@@ -6,7 +6,7 @@ export function PrizePool() {
     {
       icon: <Crown className="w-6 h-6 sm:w-7 sm:h-7 text-blue-600" />,
       title: "1st Place Champions",
-      reward: "Cash Prize + Winner Trophy",
+      reward: "Prize + Winner Trophy",
       badge: "CHAMPION",
       badgeColor: "bg-blue-50 text-blue-700 border-blue-200",
       delay: 0.1,
@@ -14,7 +14,7 @@ export function PrizePool() {
     {
       icon: <Trophy className="w-6 h-6 sm:w-7 sm:h-7 text-blue-600" />,
       title: "2nd Place Runners-Up",
-      reward: "Cash Prize + Trophy",
+      reward: "Prize + Trophy",
       badge: "RUNNER-UP",
       badgeColor: "bg-sky-50 text-sky-700 border-sky-200",
       delay: 0.2,
@@ -22,7 +22,7 @@ export function PrizePool() {
     {
       icon: <Medal className="w-6 h-6 sm:w-7 sm:h-7 text-blue-600" />,
       title: "3rd Place Podium",
-      reward: "Cash Prize + Medals",
+      reward: "Prize + Medals",
       badge: "3RD PLACE",
       badgeColor: "bg-gray-100 text-gray-700 border-gray-300",
       delay: 0.3,

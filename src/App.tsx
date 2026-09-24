@@ -37,7 +37,7 @@ export default function App() {
               </div>
               <h4 className="text-black font-bold text-base sm:text-lg mb-1.5 font-display">Yuva E Arena Dhamtari</h4>
               <p className="text-gray-600 text-xs font-sans leading-relaxed mb-3">
-                The premier collegiate gaming tournament platform for Dhamtari, bringing together the finest mobile esports talent in Free Fire and BGMI.
+                The premier gaming tournament platform for Dhamtari, bringing together the finest mobile esports talent in Free Fire and BGMI.
               </p>
               <a
                 href="https://chat.whatsapp.com/C9Dtsv1jPgpFTN6dtx8sGY"
@@ -71,7 +71,7 @@ export default function App() {
                 <div>
                   <h4 className="text-black font-semibold mb-0.5 text-xs">Organizer Helpline</h4>
                   <p className="text-gray-600 text-xs font-sans">
-                    Student Sports & Esports Desk<br />  +91 93037 05828  <br/> +91 706 781 4389
+                    Student Sports & Esports Desk<br />  +91 93037 05828 <br/>+91 70008 65247 <br/> +91 70678 14389
                   </p>
                 </div>
               </div>
