@@ -72,13 +72,16 @@ export function Hero() {
             <span>Register Squad</span>
           </a>
 
-          <button
-            onClick={() => scrollTo('details')}
-            className="w-full sm:w-auto px-5 py-2.5 sm:px-5 sm:py-3 bg-white hover:bg-gray-50 text-gray-800 font-semibold text-xs sm:text-sm rounded-full border border-gray-200 transition-all font-sans flex items-center justify-center gap-1.5 cursor-pointer shadow-sm"
+          <a
+            href="https://yuvadhamtari.com/event-details.php?id=11"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-full sm:w-auto px-5 py-2.5 sm:px-5 sm:py-3 bg-white hover:bg-black-50 text-orange-400 font-semibold text-xs sm:text-sm rounded-full border border-gray-200 transition-all font-sans flex items-center justify-center gap-1.5 cursor-pointer shadow-sm"
           >
-            <span>Format & Rules</span>
+            <span>Yuva Dhamtari Portal Login</span>
             <ChevronRight className="w-3.5 h-3.5 text-gray-500" />
-          </button>
+          </a>
+
         </motion.div>
 
         {/* Key Highlight Pills (Compact) */}
