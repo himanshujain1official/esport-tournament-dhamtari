@@ -62,13 +62,15 @@ export function Hero() {
           transition={{ duration: 0.6, delay: 0.3 }}
           className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 max-w-md mx-auto"
         >
-          <button
-            onClick={() => scrollTo('register')}
+          <a
+            href="https://forms.gle/SAgEewwLX5LCP9y2A"
+            target="_blank"
+            rel="noopener noreferrer"
             className="w-full sm:w-auto px-6 py-3 sm:px-8 sm:py-4 bg-gradient-to-r from-blue-700 to-blue-500 hover:from-blue-800 hover:to-blue-600 text-white font-bold text-x sm:text-sm rounded-full transition-all font-display shadow-md flex items-center justify-center gap-2 cursor-pointer group animate-bounce delay-0.1s"
           >
             <Sparkles className="w-4 h-4 text-white group-hover:rotate-12 transition-transform animate-pulse" />
             <span>Register Squad</span>
-          </button>
+          </a>
 
           <button
             onClick={() => scrollTo('details')}
